@@ -1,6 +1,3 @@
-- [Source_Data_24Oct2022.xlsx](https://zenodo.org/records/7246185)
-
-
 ## Data Sources for Gut Microbiome and Neurodegenerative Diseases
 
 ### 1. [NCBI Bioproject PRJNA1101026](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1101026/)
@@ -22,7 +19,7 @@
 - **[Link to paper](https://www.nature.com/articles/s41467-022-34667-x)**
 - **PD patients:** 490
 - **Control:** 234
-- **Data Type:** 
+- **Data Type:**
     - Taxonomic profiles with labels, MetaPhlAn3, default parameters
     - Raw sequence reads, short (500 bp), Illumina NovaSeq 6000
 
@@ -52,4 +49,9 @@
 ### 6. [NCBI Bioproject PRJNA811324](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA811324/)
 - **AD and Control (Kazakhstan):** 84
 - **Data Type:** Raw sequence reads, didn't find more info yet
+- **File:** ad/sequences/Source_Data_24Oct2022.xlsx
 
+
+### 6. [Gut Microbiome in Parkinson’s Disease: Prodromal Changes](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/ZOAWNF)
+- **Data from MaAsLin2 analyses on analyses focusing on Parkinson’s Disease and Prodromal Parkinson’s Disease** 84
+- **?**: MaAsLin2
