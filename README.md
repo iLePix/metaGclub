@@ -30,7 +30,7 @@ examples:
 - data augmentation
 
 possible plans for next week:
-
+- maybe look for more diseases for example: Huntington's disease (HD)
 - work more on models, feature extraction
 - look at what models other people used for classification of taxonomic profiles
 - use MetaPhIAn3 to generate more taxonomic profiles
