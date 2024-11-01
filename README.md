@@ -8,26 +8,26 @@ find more neurodegenerative data, also label the algorithms. and think of a stra
 
 Where have you made progress?
 
-- excel sheet for overview
+- csv sheet for overview
 - use MetaPhlAn3 to generate taxonomic profiles
 - trained first model on some taxonomic profiles we already have
     -> random forest regression, acc=0.69
 - started working on feature extraction (pca, ...)
-- trying this out: http://epistasislab.github.io/tpot/
+- trying out different pipelines using [tpot](http://epistasislab.github.io/tpot/)
 
-Where did you struggle?
 
+Where did we struggle?
 - didn't really find more data
 - unsure if enough data
-- unsure how to use taxonomic profiles as dataset, we don't understand the data
-    -> do you know what part of microbiome is specifically important? maybe talk to biology expert?
+- unsure how to use taxonomic profiles as dataset, we currently have trouble understanding the data
+    -> what part of microbiome is specifically important? maybe talk to biology expert?
 
-What are your key ideas on how to overcome your struggles?
+Key ideas on how to overcome our struggles?
 
 - look into methods for unbalanced datasets
 examples:
 - oversampling, undersampling
-- data augmentation 
+- data augmentation
 
 possible plans for next week:
 
