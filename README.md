@@ -5,6 +5,7 @@ find more neurodegenerative data, also label the algorithms. and think of a stra
 
 
 **Meeting 01.11.24**
+
 Where have you made progress?
 
 - excel sheet for overview
