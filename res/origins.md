@@ -5,6 +5,7 @@
 - **PD patients:** 85
 - **Control:** ?
 - **Data Type:** Raw sequence reads, short (500 bp), Illumina HiSeq 2500 or MiSeq
+- **Data Type:** not downloaded
 
 ---
 
