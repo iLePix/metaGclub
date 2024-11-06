@@ -1,19 +1,14 @@
 import pandas as pd
 import os
 from functools import reduce
-import numpy as np
 import pandas as pd
-from sklearn.decomposition import PCA
-from sklearn.preprocessing import StandardScaler
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import accuracy_score, classification_report
 from sklearn.impute import SimpleImputer
 from tpot import TPOTClassifier
 from sklearn.preprocessing import LabelEncoder
+from sklearn.model_selection import train_test_split
 current_dir = os.getcwd()
 path = os.path.join(current_dir, 'res/Source_Data_24Oct2022.xlsx')
-print(f"Current Directory: {path}")
+print(f"looking at data in: {path}")
 
 dfs = pd.read_excel(path, sheet_name=None)
 
@@ -42,6 +37,15 @@ tpot_df = reduce(
     lambda left, right: pd.merge(left, right, left_index=True, right_index=True, how='inner'),
     data_frames
 )
+
+control_count = tpot_df[tpot_df["Case_status"] == "Control"].shape[0]
+
+# Count rows with 'PD' in 'Case_status' column
+pd_count = tpot_df[tpot_df["Case_status"] == "PD"].shape[0]
+
+# Print statement combining both counts with descriptions
+print(f"{pd_count} patients with Parkinson's (PD) | {control_count} healthy control patients.")
+
 
 X = tpot_df.drop('Case_status', axis=1)
 y = tpot_df['Case_status']

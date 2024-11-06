@@ -36,3 +36,12 @@ possible plans for next week:
 - use MetaPhIAn3 to generate more taxonomic profiles
 - We don't know if it makes sense invest more time into finding more data
 - access to cluster would be nice
+
+
+results of running tpot on the taxanomic profiles with:
+    - 490 patients with Parkinson's (PD) | 234 healthy control patients.
+    - Best pipeline: ExtraTreesClassifier(input_matrix, bootstrap=False, criterion=entropy, max_features=0.45, min_samples_leaf=6, min_samples_split=14, n_estimators=100)
+    - TPOT Test Accuracy: 0.8278145695364238
+
+Next step:
+shuffeling this data, with the '8000 healty/control patients' taxanomic profiles and running tpot again
