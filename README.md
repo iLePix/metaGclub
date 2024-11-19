@@ -45,3 +45,27 @@ results of running tpot on the taxanomic profiles with:
 
 Next step:
 shuffeling this data, with the '8000 healty/control patients' taxanomic profiles and running tpot again
+
+
+
+
+
+## Importan cluster links:
+    - usage tutorial: ./SAFARI_Cluster_Tutorial.pdf
+    - login tutorial: ./SAFARI Cluster Guide.pdf
+
+
+    using a docker container:
+
+    docker pull globusgenomics/metaphlan3
+    https://hub.docker.com/r/globusgenomics/metaphlan3
+
+
+    cookbook for athome:
+    docker pull globusgenomics/metaphlan3:latest
+    docker save globusgenomics/metaphlan3:latest -o docker_metaphlan3.tar
+    ./upload_to_cluster.sh
+    docker load -i /home/ehanelt/metaGclub/docker_metaphlan3.tar
+    USE SRUN TO RUN:
+    tar -xf filename.tar -C /metaphlan3-container
+    docker run -d --name metaphlan3-container -p 8080:80 globusgenomics/metaphlan3:latest
