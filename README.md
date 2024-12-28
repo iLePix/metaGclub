@@ -69,3 +69,19 @@ shuffeling this data, with the '8000 healty/control patients' taxanomic profiles
     USE SRUN TO RUN:
     tar -xf filename.tar -C /metaphlan3-container
     docker run -d --name metaphlan3-container -p 8080:80 globusgenomics/metaphlan3:latest
+    srun "docker build metaphlan3 . 8080:80"
+
+
+
+how to use conda to run metaphlan3:
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
+conda create -n <env-name> -c bioconda -c conda-forge python=3.7 metaphlan=3.0
+
+
+https://training.galaxyproject.org/training-material/topics/microbiome/tutorials/taxonomic-profiling/tutorial.html
+
+
+we want the genome based approach
+
+SRA TOOLS IS A REQUIREMENT AND BIOPYTHON
